@@ -77,13 +77,13 @@ public:
 		this->y = this->y / aux;
 		this->z = this->z / aux;
 	}
-	float DistanceTo(const vec3& v3) {
-		float dist;
+	V DistanceTo(const vec3& v3) {
+		V dist;
 		vec3 v1;
 		v1.x = -this->x + v3.x;
 		v1.y = -this->y + v3.y;
 		v1.z = -this->z + v3.z;
-		len = sqrt(pow(v1.x, 2) + pow(v1.y, 2) + pow(v1.z, 2));
+		dist = sqrt(pow(v1.x, 2) + pow(v1.y, 2) + pow(v1.z, 2));
 		return dist;
 	}
 };
